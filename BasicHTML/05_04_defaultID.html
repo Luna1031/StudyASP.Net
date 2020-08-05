@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample</title>
+        <style>
+            body{
+                background-image: url("image/space.jpg");
+                background-size: 100%;
+                opacity: 0.5;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:havor{
+                color: darkslategray;
+            }
+            nav_ul{
+                padding-top: 10px;
+            }
+            nav ul li{
+                display: inline;
+                border-left: 1px solid dodgerblue;
+                font: bold 12px Dotum;
+                padding:0 10px;
+            }
+            #custom_header{
+                width: 800px;
+                margin: 0 auto;
+                background-color: deepskyblue;
+                color: azure;
+            }
+            #custom_nav{
+                width: 800px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            #custom_aside{
+                width: 200px;
+                float: left;
+                background: lightcyan;
+            }
+            #custom_content{
+                width: 800px;
+                float: right;
+                background: coral;
+            }
+            #wrap{
+                width: 1000px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            #custom-content > article > h1:hover{
+                color:seagreen
+            }
+            #custom-content > article > h1:active{
+                color: mediumorchid;
+            }
+            .item{
+                color:lightpink;
+            }
+            .second_footer{
+                background-color: magenta;
+                border: solid 3px indigo;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="custom_header">
+            <h1>HTML기본</h1>
+        </header>
+        <nav id="custom_nav">
+            <ul>
+                <li><a href="test01.html">MENU1</a></li>
+                <li><a href="test02.html">MENU2</a></li>
+                <li><a href="test03.html">MENU3</a></li>
+            </ul>
+        </nav>
+        <main id="wrap">
+            <aside id="custom_aside">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur  adipscing elit.
+                </p>
+            </aside>
+            <section id="custom_content">
+                <article>
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur  adipscing elit.</p>
+                </article>
+                <article>
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur  adipscing elit.</p>
+                </article>
+            </section>
+        </main>
+        <footer id="custom_footer">
+            <adress calss="item second_footer">부산광역시 남구 용당동</adress>
+        </footer>
+    </body>
+</html>

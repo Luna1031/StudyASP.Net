@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Without viewport Meta</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1"/>
+        <style>
+            /*서마터 폰*/
+            @media screen and (max-width: 767px){
+                body{
+                    background-color: violet;
+                }
+            }
+            /*타블릿 PC*/
+            @media screen and (min-width: 768px) and (max-width: 959px){
+                body{
+                    background-color: palegreen;
+                }
+            }
+            /*PC*/
+            @media screen and (min-width: 960px){
+                body{
+                    background-color: powderblue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur  adipscing elit.</p>
+    </body>
+</html>
