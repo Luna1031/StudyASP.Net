@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <script>    // script의 위치는 상관없음
+            // 01
+            // 변수 초기화
+            // var pi = 3.141592;  // 모든 자료를 var형으로 씀
+            // var radius = 10;
+
+            // 출력
+            // alert("result :" + (2 * pi * radius));
+
+            // 02
+            // var date = new Date();
+            // var year = date.getFullYear();
+            // var month = date.getMonth() + 1;
+            // var day = date.getDay();
+            // var hour = date.getHours();
+            // var min = date.getMinutes();
+            // var sec = date.getSeconds();
+            // var ms = date.getMilliseconds();
+
+            // alert(year + "" + month + "" + day);
+
+            // 03 배열
+            // var array = [273, "문자열", true, function() {var i = 10;}, {}, [1, 3] ];
+            // alert(array);
+
+            // 04 반복문
+            // var output = 0;
+            // for (let index = 0; index <= 100; index++) {
+            //     output += index;
+            // }
+            // alert(output);
+
+            // 05 함수 - 익명함수
+            // var fnc = function(){
+            //     alert("function01");
+            // }
+
+            // alert(typeof(fnc));
+            // alert(fnc());
+
+            // 06 함수 - 일반항수
+            // var result = 0;
+            // function fnc(x){
+            //     return x * x * x;
+            // }
+            // result = fnc(10);
+            // alert(result);
+
+            // 07 함수 - 콜백함수
+            function callTenTimes(fncParam){
+                for (let index = 0; index < 10; index++) {
+                    fncParam();                    
+                }
+            }
+
+            // var fnc = function(){
+            //     alert("function call");
+            // }
+
+            callTenTimes(function (){
+                alert("Anonynous call");
+            });
+            
+        </script>
+    </head>
+    <body></body>
+</html>
