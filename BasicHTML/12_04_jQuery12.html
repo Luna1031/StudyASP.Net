@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <titile>jQuery example</titile>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                for (var index = 0; index < 1000; index++) {
+                    $("<h1>jQuery " + index + "</h1>").css({
+                        backgroundColor :"black",
+                        color :"white",
+                        fontsize :index+1
+                    }).appendTo("body");
+                }
+            })
+        </script>
+    </head>
+</html>
