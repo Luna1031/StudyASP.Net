@@ -5,11 +5,11 @@
 
 @font-face {
   font-family: "Flaticon";
-  src: url("./flaticon.eot");
-  src: url("./flaticon.eot?#iefix") format("embedded-opentype"),
-       url("./flaticon.woff") format("woff"),
-       url("./flaticon.ttf") format("truetype"),
-       url("./flaticon.svg#Flaticon") format("svg");
+  src: url("/assets/vendor/flaticons/flaticon.eot");
+  src: url("/assets/vendor/flaticons/flaticon.eot?#iefix") format("embedded-opentype"),
+       url("/assets/vendor/flaticons/flaticon.woff") format("woff"),
+       url("/assets/vendor/flaticons/flaticon.ttf") format("truetype"),
+       url("/assets/vendor/flaticons/flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }

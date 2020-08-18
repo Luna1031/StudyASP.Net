@@ -83,4 +83,9 @@ D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\obj\Debug\EddyNewHome.
 D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\obj\Debug\EddyNewHome.csproj.CopyComplete
 D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\obj\Debug\EddyNewHome.dll
 D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\obj\Debug\EddyNewHome.pdb
+D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\bin\EntityFramework.dll
+D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\bin\EntityFramework.SqlServer.dll
+D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\bin\EntityFramework.xml
+D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\bin\EntityFramework.SqlServer.xml
+D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\bin\ko\EntityFramework.resources.dll
 D:\PKNU2020\StudyASP.Net\EddyHomepageSolution\EddyNewHome\obj\Debug\EddyNewHome.csprojAssemblyReference.cache

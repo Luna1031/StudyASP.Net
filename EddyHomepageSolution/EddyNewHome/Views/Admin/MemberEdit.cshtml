@@ -1,0 +1,98 @@
+﻿@using EddyNewHome.Models;
+
+@model EddyNewHome.Models.Members
+
+@{
+    ViewBag.Title = "Admin MemberEdit";
+}
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            var result = '@ViewBag.Result';
+            if (result == "OK") {
+                alert("Saved")
+            }
+            if (result == "FAIL") {
+                alert("Not Saved")
+            }
+        });
+
+        function fnDeleteConfirm() {
+            if (confirm("Delete?") == true) {
+                location.href = "/Member/Delete?memberid=" + $("#MemberID").val();
+            }
+            else {
+                return false;
+            }
+        }
+
+        // ID 중복체크
+        function fnDoubleCheck() {
+            if ($("#MemberId").val() == "") {
+                alert("Insert ID");
+                $("#MemberID").focus();
+                return false;
+            }
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: "/Member/IDCheck?memberid=" + $("#MemberID").val(),
+                data: "{}",
+                dataType: "json"
+            }).done(function (response) {
+                if (response == "OK") {
+                    alert("Usable ID")
+                    $("#btnSave").removeAttr("disabled");
+                }
+                else {
+                    alert("Denied")
+                    $("MemberID").val("");
+                    $("MemberID").focus();
+                    $("#btnSave").attr("disabled", true);
+                }
+            })
+        }
+    </script>
+}
+
+<section class="wrapper">
+    <h3><i class="fa fa-angle-right"></i>Member Edit</h3>
+    <!-- BASIC FORM ELELEMNTS -->
+    <div class="row mt">
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <h4 class="title">Edit Form</h4>
+            <div id="message"></div>
+            <form class="contact-form php-mail-form" role="form" action="@Url.Action("MemberEdit","Admin")" method="POST">
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.MemberID, new { @class = "form-control", placeHolder = "아이디 입력", @readonly = true})
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.MemberID, new { @class = "form-control", placeHolder = "이름 입력" })
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.MemberID, new { @class = "form-control", placeHolder = "암호 입력" })
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.MemberID, new { @class = "form-control", placeHolder = "메일 입력" })
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.MemberID, new { @class = "form-control", placeHolder = "전화번호 입력" })
+                    <div class="validate"></div>
+                </div>
+                <div class="form-send">
+                    <button type="submit" class="btn btn-lg btn-primary" onclick="return fnSaveCheck();">Save</button>
+                    <a href="/Admin/Members" class="btn btn-lg btn-primary">List</a>
+                </div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </form>
+        </div>
+    </div>
+    <!-- /row -->
+    <!-- /row -->
+</section>

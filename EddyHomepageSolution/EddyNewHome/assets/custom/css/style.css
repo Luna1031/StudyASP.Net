@@ -5,7 +5,7 @@
 [Color Scheme / Colors, textures]
 */
 .e-bg-light-texture {
-  background: url("../images/backgrounds/dark_fish_skin.png"); }
+  background: url("/assets/custom/images/backgrounds/dark_fish_skin.png"); }
 
 .color01 {
   background-color: #f2f2f2 !important; }
@@ -340,7 +340,7 @@ body {
   font: 13px/1.7 "Raleway", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  background-image: url("../images/backgrounds/grey_wash_wall.png");
+  background-image: url("/assets/custom/images/backgrounds/grey_wash_wall.png");
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -558,22 +558,23 @@ i {
   width: 30%; }
 
 #back-top a {
-  background: #404040 url(../images/back_top.png) no-repeat 50% 50%;
-  border: 1px solid #f2f2f2;
-  bottom: 60px;
-  display: block;
-  height: 40px;
-  position: fixed;
-  right: 30px;
-  width: 40px;
-  z-index: 10;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  -ms-transition: all 0.35s ease-in-out; }
+    background: #404040 url(/assets/custom/images/back_top.png) no-repeat 50% 50%;
+    border: 1px solid #f2f2f2;
+    bottom: 60px;
+    display: block;
+    height: 40px;
+    position: fixed;
+    right: 30px;
+    width: 40px;
+    z-index: 10;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+}
   #back-top a:hover {
-    background: #e74c3c url(../images/back_top.png) no-repeat 50% 50%;
+    background: #e74c3c url(/assets/custom/images/back_top.png) no-repeat 50% 50%;
     border-color: #e74c3c; }
 
 input, textarea {
@@ -756,23 +757,24 @@ button, input, select, textarea {
   #top-navigation .ident {
     color: #a7a7a7; }
     #top-navigation .ident .vc-photo {
-      min-height: 360px;
-      background: url("../images/door.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: url(../images/grayscale.svg#greyscale);
-      /* Firefox 4+ */
-      filter: gray;
-      /* IE 6-9 */
-      -moz-transition: all .5s ease-in-out;
-      -webkit-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out; }
+        min-height: 360px;
+        background: url("/assets/custom/images/door.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: url(/assets/custom/images/grayscale.svg#greyscale);
+        /* Firefox 4+ */
+        filter: gray;
+        /* IE 6-9 */
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
       #top-navigation .ident .vc-photo a {
         width: 100%;
         height: 100%; }
@@ -1235,58 +1237,67 @@ button, input, select, textarea {
 .timeline-bg03-01,
 .timeline-bg04,
 .timeline-bg04-01 {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: url(../images/grayscale.svg#greyscale);
-  /* Firefox 4+ */
-  filter: gray;
-  /* IE 6-9 */
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(/assets/custom/images/grayscale.svg#greyscale);
+    /* Firefox 4+ */
+    filter: gray;
+    /* IE 6-9 */
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
 
 .timeline-bg01 {
-  background: url("../images/timeline-1.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg01-01 {
-  background: url("../images/timeline-1-01.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-1-01.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg02 {
-  background: url("../images/timeline-2.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg02-01 {
-  background: url("../images/timeline-2-01.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-2-01.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg03 {
-  background: url("../images/timeline-3.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-3.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg03-01 {
-  background: url("../images/timeline-3-01.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-3-01.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg04 {
-  background: url("../images/timeline-4.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-4.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 .timeline-bg04-01 {
-  background: url("../images/timeline-4-01.jpg");
-  background-position: center;
-  background-size: cover; }
+    background: url("/assets/custom/images/timeline-4-01.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 /* Counts Block */
 .bg-light .counts {
@@ -1331,7 +1342,8 @@ button, input, select, textarea {
         cursor: pointer; }
 
 #counts-dark-bg {
-  background: url("../images/backgrounds/dark_wood.png"); }
+    background: url("/assets/custom/images/backgrounds/dark_wood.png");
+}
   #counts-dark-bg .count-container .count-icon i::before {
     color: #f2f2f2; }
   #counts-dark-bg .count-container .count .digit {

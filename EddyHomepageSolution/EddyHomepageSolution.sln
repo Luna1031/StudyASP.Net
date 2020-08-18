@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EddyHomepage", "EddyHomepag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EddyNewHome", "EddyNewHome\EddyNewHome.csproj", "{16B17839-DDEF-4365-B536-DC08D8497E5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EddyNewHome.Test", "EddyNewHome.Test\EddyNewHome.Test.csproj", "{09D7D6E3-DFEC-42A1-945D-3265EB842C7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{16B17839-DDEF-4365-B536-DC08D8497E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16B17839-DDEF-4365-B536-DC08D8497E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16B17839-DDEF-4365-B536-DC08D8497E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D7D6E3-DFEC-42A1-945D-3265EB842C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D7D6E3-DFEC-42A1-945D-3265EB842C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D7D6E3-DFEC-42A1-945D-3265EB842C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D7D6E3-DFEC-42A1-945D-3265EB842C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

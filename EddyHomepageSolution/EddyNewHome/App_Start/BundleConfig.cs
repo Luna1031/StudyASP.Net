@@ -36,6 +36,7 @@ namespace EddyNewHome
                 "~/assets/vendor/hover/css/hover-min.css",
                 "~/assets/vendor/wow/animate.css",
                 "~/assets/vendor/mfp/css/magnific-popup.css",
+                "~/assets/vendor/footable/footable.core.css",
                 "~/assets/custom/css/style.css"));
 
             bundles.Add(new ScriptBundle("~/eddyhome/js").Include(
@@ -49,7 +50,41 @@ namespace EddyNewHome
                 "~/assets/vendor/anicounter/jquery.counterup.min.js",
                 "~/assets/vendor/wow/wow.min.js",
                 "~/assets/vendor/pjax/jquery.pjax.js",
+                "~/assets/vendor/footable/footable.all.min.js",
                 "~/assets/custom/js/custom.js"
+                ));
+
+            #endregion
+
+            #region Dash.io Admin Template
+
+            bundles.Add(new StyleBundle("~/dashio/css").Include(
+                "~/Dashio/lib/bootstrap/css/bootstrap.min.css",
+                "~/Dashio/lib/font-awesome/css/font-awesome.css",
+                "~/Dashio/css/zabuto_calendar.css",
+                "~/Dashio/lib/gritter/css/jquery.gritter.css",
+                "~/assets/vendor/footable/footable.core.css",
+                "~/Dashio/css/style.css",
+                "~/Dashio/css/style-responsive.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/dashio/header_js").Include(
+                "~/Dashio/lib/chart-master/Chart.js"
+                ));
+
+            bundles.Add(new ScriptBundle("~/dashio/footer_js").Include(
+                "~/Dashio/lib/jquery/jquery.min.js",
+                "~/Dashio/lib/bootstrap/js/bootstrap.min.js",
+                "~/Dashio/lib/jquery.dcjqaccordion.2.7.js",
+                "~/Dashio/lib/jquery.scrollTo.min.js",
+                "~/Dashio/lib/jquery.nicescroll.js",
+                "~/Dashio/lib/jquery.sparkline.js",
+                "~/Dashio/lib/common-scripts.js",
+                "~/Dashio/lib/gritter/js/jquery.gritter.js",
+                "~/Dashio/lib/gritter-conf.js",
+                "~/Dashio/lib/sparkline-chart.js",
+                "~/assets/vendor/footable/footable.all.min.js",
+                "~/Dashio/lib/zabuto_calendar.js"
                 ));
 
             #endregion

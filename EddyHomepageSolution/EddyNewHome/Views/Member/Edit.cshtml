@@ -1,0 +1,116 @@
+﻿@using EddyNewHome.Models;
+
+@model EddyNewHome.Models.Members
+
+@{
+    ViewBag.Title = "Edit";
+    Response.Write(ViewBag.Result);
+}
+
+@section scripts{ 
+    <script>
+        $(document).ready(function () {
+            var result = '@ViewBag.Result';
+            if (result == "OK") {
+                alert("Saved")
+            }
+            if (result == "FAIL") {
+                alert("Not Saved")
+            }
+        });
+
+        function fnDeleteConfirm() {
+            if (confirm("Delete?") == true) {
+                location.href = "/Member/Delete?memberid=" + $("#MemberID").val();
+            }
+            else {
+                return false;
+            }
+        }
+
+        // ID 중복체크
+        function fnDoubleCheck() {
+            if ($("#MemberId").val() == "") {
+                alert("Insert ID");
+                $("#MemberID").focus();
+                return false;
+            }
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: "/Member/IDCheck?memberid=" + $("#MemberID").val(),
+                data: "{}",
+                dataType: "json"
+            }).done(function (response) {
+                if (response == "OK") {
+                    alert("Usable ID")
+                    $("#btnSave").removeAttr("disabled");
+                }
+                else {
+                    alert("Denied")
+                    $("MemberID").val("");
+                    $("MemberID").focus();
+                    $("#btnSave").attr("disabled", true);
+                }
+            })
+        }
+    </script>
+}
+
+<div id="feedback" class="inner-content">
+    <section id="page-title" class="inner-section">
+        <div class="container-fluid nopadding wow fadeInRight" data-wow-delay="0.4s" data-wow-offset="10">
+            <h2 class="font-accident-two-normal uppercase">Edit</h2>
+            <h5 class="font-accident-one-bold hovercolor uppercase">Hard-working person on the way to the success...</h5>
+            <p class="small fontcolor-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.
+            </p>
+        </div>
+    </section>
+    <!-- Feedback Block -->
+    <section class="inner-section feedback feedback-light">
+        <div class="container-fluid nopadding">
+            <div class="row">
+                <div class="col-md-2">&nbsp;</div>
+                <div class="col-md-8 e-centered wow fadeInDown" data-wow-delay="0.6s" data-wow-offset="10">
+                    <div class="dividewhite2"></div>
+                    <div id="form-messages"></div>
+                    <form method="post" action="@Url.Action("Edit", "Member")" class="wpcf7-form">
+                                
+                        <div class="field">
+                            @Html.TextBoxFor(m => m.MemberID, new { placeholder = "Input ID plz" })
+                        </div>
+
+                        <div class="field">
+                            @Html.TextBoxFor(m => m.MemberName, new { placeholder = "Input Name plz" })
+                        </div>
+
+                        <div class="field">
+                            @Html.PasswordFor(m => m.MemberPWD, new { placeholder = "Input Password plz" })
+                        </div>
+
+                        <div class="field">
+                            @Html.TextBoxFor(m => m.Email, new { placeholder = "Input Email plz" })
+                        </div>
+
+                        <div class="field">
+                            @Html.TextBoxFor(m => m.Telephone, new { placeholder = "Input Telephone plz" })
+                        </div>
+
+                        <div class="dividewhite2"></div>
+
+                        <div class="field text-center">
+                            <button id="btnSave" type="submit" class="btn btn-lg btn-lgr-str" onclick="return fnSaveCheck();">Update</button>
+                            <button type="button" class="btn btn-lg tn-lgr-str" onclick="return fnDeleteConfirm();">Delete</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">&nbsp;</div>
+                <div class="col-md-12 divider-dynamic"></div>
+            </div>
+        </div>
+        <div class="dividewhite6"></div>
+    </section>
+    <!-- /Feedback Block -->
+</div>
+
